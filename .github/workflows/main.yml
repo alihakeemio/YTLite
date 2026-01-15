@@ -204,7 +204,7 @@ jobs:
         if: ${{ inputs.enable_ryd }}
         run: |
           cd ${{ github.workspace }}
-          git clone --quiet --depth=1 https://github.com/alihakeemio/Return-YouTube-Dislikes.git
+          git clone -b working --quiet --depth=1 https://github.com/alihakeemio/Return-YouTube-Dislikes.git
  
       - name: Clone YouGroupSettings
         if: ${{ inputs.enable_demc }}
